@@ -33,12 +33,7 @@ build_command = "poetry_build"
 commit_message = "chore(release): {version}"
 commit_parser = "angular"
 tag_format =  "{version}"
-
-[tool.semantic_release.branches.main]
-match = "main"
-
-[tool.semantic_release.branches.other]
-match = "*"
+branches = ["main"]
 
 [tool.semantic_release.changelog]
 changelog_file = "docs/CHANGELOG.md"

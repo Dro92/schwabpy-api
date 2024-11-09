@@ -1,7 +1,7 @@
 from enum import Enum
 
-from trader.schwab.enums import Streamer
-from trader.schwab.utils import (
+from schwabpy_api.schwab.enums import Streamer
+from schwabpy_api.schwab.utils import (
     parse_option_string,
     convert_list_to_csv_string,
 )

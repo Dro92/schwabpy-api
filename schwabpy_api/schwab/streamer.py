@@ -2,18 +2,18 @@ from websockets import client as ws_client
 
 import asyncio
 
-from trader.schwab.auth import SchwabAsyncOAuth
-from trader.schwab.enums import Streamer
-from trader.schwab.services import (
+from schwabpy_api.schwab.auth import SchwabAsyncOAuth
+from schwabpy_api.schwab.enums import Streamer
+from schwabpy_api.schwab.services import (
     LevelOneEquities,
     LevelOneOptions,
     Book,
 )
-from trader.schwab.utils import (
+from schwabpy_api.schwab.utils import (
     CustomSocket,
 )
 
-from trader.utils.log import logger
+from schwabpy_api.utils.log import logger
 
 
 class StreamClient(CustomSocket):

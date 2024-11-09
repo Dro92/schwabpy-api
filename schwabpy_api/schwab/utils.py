@@ -16,8 +16,8 @@ from websockets.exceptions import (
     ConnectionClosedError,
 )
 
-from trader.utils.log import logger
-from trader.schwab.auth import SchwabAsyncOAuth
+from schwabpy_api.utils.log import logger
+from schwabpy_api.schwab.auth import SchwabAsyncOAuth
 
 SCHWAB_API_ROOT_DOMAIN = "https://api.schwabapi.com"
 

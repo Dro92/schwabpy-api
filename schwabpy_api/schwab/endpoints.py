@@ -2,12 +2,12 @@ from enum import Enum
 from datetime import date
 from httpx import Response
 
-from trader.schwab.enums import (
+from schwabpy_api.schwab.enums import (
     Quote,
     Option,
     Markets,
 )
-from trader.schwab.utils import (
+from schwabpy_api.schwab.utils import (
     CustomCRUD,
     validate_enums_iterable,
     check_enum_value,

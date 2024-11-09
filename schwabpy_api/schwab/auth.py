@@ -5,8 +5,8 @@ from datetime import datetime, timedelta, timezone
 import redis
 import json
 
-from trader.schwab.enums import Token
-from trader.utils.log import logger
+from schwabpy_api.schwab.enums import Token
+from schwabpy_api.utils.log import logger
 
 # Schwab token data
 # https://developer.schwab.com/products/trader-api--individual/details/documentation/Retail%20Trader%20API%20Production

@@ -1,18 +1,18 @@
 from datetime import datetime, timezone
-from trader.schwab.auth import SchwabAsyncOAuth
-from trader.schwab.utils import (
+from schwabpy_api.schwab.auth import SchwabAsyncOAuth
+from schwabpy_api.schwab.utils import (
     CustomCRUD,
     check_enum_value,
     check_mkt_hours,
 )
-from trader.schwab.endpoints import (
+from schwabpy_api.schwab.endpoints import (
     Quotes,
     Options,
     MarketHours,
     UserPreference,
 )
 
-from trader.schwab.enums import (
+from schwabpy_api.schwab.enums import (
     Markets,
 )
 
