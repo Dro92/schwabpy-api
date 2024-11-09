@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Schwabpy API",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python" : "${workspaceFolder}/.venv/bin/python",
+            "program": "${workspaceFolder}/schwabpy_api/app.py",
+            "env": {
+            }
+        }
+    ]
+}

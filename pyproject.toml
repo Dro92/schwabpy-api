@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "schwabpy-api"
+version = "0.0.0"
+description = "Python wrapper for the Schwab developer API."
+authors = ["Alejandro Piñero"]
+readme = "README.md"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+coverage = "^7.5.0"
+ruff = "0.1.8"
+mypy = "1.3.0"
+pytest-cov = "^5.0.0"
+sphinx = "^8.0.2"
+sphinx-autoapi = "^3.3.2"
+python-semantic-release = "^9.12.0"
+
+[tool.coverage.run]
+source = ["schwabpy_api"]
+omit = ["*/tests/*"]
+
+[tool.semantic_release]
+version_toml = ["pyproject.toml:tool.poetry.version"]
+version_variable = ["schwabpy_api/version.py:__version__"]
+build_command = "poetry_build"
+commit_message = "chore(release): {version}"
+commit_parser = "angular"
+tag_format =  "{version}"
+
+[tool.semantic_release.branches.main]
+match = "main"
+
+[tool.semantic_release.branches.other]
+match = "*"
+
+[tool.semantic_release.changelog]
+changelog_file = "docs/CHANGELOG.md"
