@@ -7,7 +7,6 @@ import json
 from abc import ABC, abstractmethod
 from authlib.integrations.base_client.errors import InvalidTokenError
 import asyncio
-import pytz
 from typing import Union
 
 from websockets.legacy import client as ws_client
